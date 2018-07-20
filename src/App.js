@@ -4,9 +4,9 @@ import HomePage from './components/HomePage';
 import LoginPage from './components/LoginPage';
 
 const App = () => (
-	<div>
-		<Route path="/" component={HomePage} />
-		<Route path="/login" component={LoginPage} />
+	<div className="ui container">
+		<Route path="/" exact component={HomePage} />
+		<Route path="/login" exact component={LoginPage} />
 	</div>
 )
 
